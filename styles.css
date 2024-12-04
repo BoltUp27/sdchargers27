@@ -45,7 +45,10 @@
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to right, #00b5e2, #fbb03b); /* SuperCharger Gradient */
+    -webkit-background-clip: text; /* Apply the gradient to the text */
+    color: transparent; /* Make the text transparent to show the gradient */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Optional: Adds depth to the text */
   }
   
   .hero-description {
