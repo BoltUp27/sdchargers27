@@ -7,42 +7,54 @@
 
 /* Body and Overall Page Styling */
 body {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
   padding: 0;
   margin: 0;
-  text-align: center; /* Center all body text */
+  text-align: center;
 }
 
 /* Header Styling */
 header {
   background-color: #A7C7E7; /* Powder Blue */
-  padding: 20px 0;
+  padding: 30px 0;
   display: flex;
-  justify-content: center;  /* Center logo horizontally */
-  align-items: center;  /* Center logo vertically */
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 header .logo-img {
   width: 150px;
   height: auto;
-  margin-bottom: 15px; /* Space between logo and title */
 }
 
-/* Hero Section (For Both Pages) */
+header .page-title {
+  color: #0f4c75; /* Navy */
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+/* Hero Section */
 .hero {
-  background-color: #fff;
-  padding: 40px 0;
+  background: url('your-image-url.jpg') center/cover no-repeat; /* Replace with your image */
+  color: #fff;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   background: linear-gradient(45deg, #A7C7E7, #FFCC00);  /* Powder Blue to Sunshine Gold gradient */
   -webkit-background-clip: text;
-  color: transparent;  /* Makes the text transparent so the gradient shows */
+  color: transparent;
   margin-bottom: 20px;
 }
 
@@ -51,11 +63,24 @@ header .logo-img {
   margin-bottom: 20px;
 }
 
-/* Move to San Diego Section (for index.html only) */
+.cta-btn {
+  background-color: #FFCC00; /* Sunshine Gold */
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn:hover {
+  background-color: #e6b800;
+}
+
+/* Move to San Diego Section */
 .move-section {
   background-color: #fff;
-  padding: 40px 0;
-  display: block;  /* Make sure it only appears in the right page */
+  padding: 60px 0;
 }
 
 .move-section h2 {
@@ -81,34 +106,21 @@ header .logo-img {
 
 .move-details p {
   font-size: 1.1rem;
-  text-align: left; /* Align text to the left for readability */
+  text-align: left;
   line-height: 1.8;
 }
 
-/* Stadium Overview Section (for stadium.html only) */
-.overview-section {
-  background-color: #fff;
-  padding: 40px 0;
-  display: none;  /* Hide on index.html */
-}
-
-.overview-section h2 {
-  color: #0f4c75;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.overview-section p {
-  font-size: 1.2rem;
-  text-align: left;
-  line-height: 1.6;
+.stadium-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 /* Call to Action Section */
 .cta-section {
   background-color: #A7C7E7; /* Powder Blue */
   padding: 40px 0;
-  text-align: center;
 }
 
 .cta-section .cta-text {
@@ -124,87 +136,37 @@ header .logo-img {
   font-size: 1.1rem;
   text-decoration: none;
   border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cta-btn:hover {
-  background-color: #e6b800;  /* Slightly darker gold on hover */
+  background-color: #e6b800;
 }
 
-/* Gallery Section */
-.gallery-section {
-  background-color: #fff;
-  padding: 40px 0;
+/* Footer Section */
+footer {
+  background-color: #0f4c75; /* Navy */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
-.gallery-section h2 {
-  color: #0f4c75;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.gallery-images {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.gallery-image {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Features List */
-.features-list {
-  list-style: none;
-  margin-top: 20px;
-  padding: 0;
-  font-size: 1.1rem;
-  text-align: left;
-}
-
-.features-list li {
-  margin-bottom: 15px;
-}
-
-/* Sustainability Section */
-.sustainability-section {
-  background-color: #fff;
-  padding: 40px 0;
-}
-
-.sustainability-section h2 {
-  color: #0f4c75;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.sustainability-list {
-  list-style: none;
-  padding: 0;
-  font-size: 1.1rem;
-  text-align: left;
-}
-
-.sustainability-list li {
-  margin-bottom: 15px;
-}
-
-/* Media Queries for Responsiveness */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .gallery-images {
-    flex-direction: column;
-    align-items: center;
+  .hero-title {
+    font-size: 2.5rem;
   }
 
-  .gallery-image {
-    width: 90%;
-    height: auto;
+  .move-section {
+    padding: 40px 20px;
   }
 
-  .cta-btn {
-    width: 80%;
-    font-size: 1rem;
+  .move-details {
+    padding: 0 15px;
+  }
+
+  .cta-content {
+    padding: 0 20px;
   }
 }
+
