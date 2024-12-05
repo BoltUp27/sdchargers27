@@ -7,23 +7,20 @@
 
 /* Body and Overall Page Styling */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
   padding: 0;
   margin: 0;
-  text-align: center;
+  text-align: center; /* Ensures everything is centered by default */
 }
 
 /* Header Styling */
 header {
-  background-color: #A7C7E7; /* Powder Blue */
-  padding: 30px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  background-color: powderblue;
+  padding: 20px 0;
+  text-align: center;
 }
 
 header .logo-img {
@@ -31,96 +28,72 @@ header .logo-img {
   height: auto;
 }
 
-header .page-title {
-  color: #0f4c75; /* Navy */
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-top: 15px;
-}
-
-/* Hero Section */
+/* Hero Section Styling */
 .hero {
   background: url('your-image-url.jpg') center/cover no-repeat; /* Replace with your image */
   color: #fff;
   padding: 100px 0;
 }
 
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .hero-title {
   font-size: 3.5rem;
   background: linear-gradient(45deg, #A7C7E7, #FFCC00);  /* Powder Blue to Sunshine Gold gradient */
-  -webkit-background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text; /* Ensures the gradient is clipped to the text */
+  color: transparent; /* Makes the text transparent so the background gradient is visible */
   margin-bottom: 20px;
 }
 
 .hero-description {
   font-size: 1.25rem;
+  color: #FFB84D;  /* Darker Sunshine Gold */
   margin-bottom: 20px;
+  text-align: center; /* Keeps text centered */
 }
 
-.cta-btn {
-  background-color: #FFCC00; /* Sunshine Gold */
-  color: #fff;
-  padding: 15px 30px;
-  font-size: 1.1rem;
-  text-decoration: none;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.cta-btn:hover {
-  background-color: #e6b800;
-}
-
-/* Move to San Diego Section */
-.move-section {
+/* Stadium Info Section */
+.info-section {
   background-color: #fff;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
-.move-section h2 {
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+h2 {
   color: #0f4c75;
   font-size: 2.5rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.move-section .section-text {
+/* Paragraph and Text Styling */
+.section-text {
   font-size: 1.1rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.move-details {
-  margin-bottom: 40px;
-}
-
-.move-details h3 {
-  color: #0f4c75;
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.move-details p {
-  font-size: 1.1rem;
-  text-align: left;
-  line-height: 1.8;
+/* Overview Section Styling */
+.overview-section {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
 }
 
 .stadium-img {
   max-width: 100%;
   height: auto;
   margin-top: 20px;
-  border-radius: 10px;
 }
 
 /* Call to Action Section */
 .cta-section {
-  background-color: #A7C7E7; /* Powder Blue */
+  background-color: powderblue;
   padding: 40px 0;
+  text-align: center;
 }
 
 .cta-section .cta-text {
@@ -136,36 +109,16 @@ header .page-title {
   font-size: 1.1rem;
   text-decoration: none;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cta-btn:hover {
-  background-color: #e6b800;
+  background-color: #FFBE00;
 }
 
 /* Footer Section */
 footer {
-  background-color: #0f4c75; /* Navy */
+  background-color: #0f4c75;
   color: #fff;
   text-align: center;
   padding: 20px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .move-section {
-    padding: 40px 20px;
-  }
-
-  .move-details {
-    padding: 0 15px;
-  }
-
-  .cta-content {
-    padding: 0 15px;
-  }
 }
