@@ -16,6 +16,8 @@ body {
 /* Header Section */
 header {
   padding: 20px 0;
+  background: linear-gradient(to right, #00b5e2, #fbb03b); /* SuperCharger Gradient */
+  color: white; /* Text color */
 }
 
 .logo-img {
