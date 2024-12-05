@@ -13,28 +13,69 @@ body {
   line-height: 1.6;
   padding: 0;
   margin: 0;
+  text-align: center; /* Center all body text */
 }
 
 /* Header Styling */
 header {
-  background-color: powderblue;
+  background-color: #A7C7E7; /* Powder Blue */
   padding: 20px 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;  /* Center logo horizontally */
+  align-items: center;  /* Center logo vertically */
+  flex-direction: column;
 }
 
 header .logo-img {
   width: 150px;
   height: auto;
+  margin-bottom: 15px; /* Space between logo and title */
 }
 
-/* Main Section Styling */
+/* Hero Section */
+.hero {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #0f4c75;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #FFCC00;  /* Sunshine Gold */
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.cta-btn:hover {
+  background-color: #e6b800;  /* Slightly darker gold on hover */
+}
+
+/* Stadium Overview Section */
+.overview-section {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
   padding: 30px 0;
 }
 
-/* Heading for All Sections */
 h2 {
   color: #0f4c75;
   font-size: 2.5rem;
@@ -42,17 +83,9 @@ h2 {
   text-align: center;
 }
 
-/* Paragraph and Text Styling */
 .section-text {
   font-size: 1.1rem;
   margin-bottom: 20px;
-  text-align: center;
-}
-
-/* Overview Section Styling */
-.overview-section {
-  background-color: #fff;
-  padding: 40px 0;
   text-align: center;
 }
 
@@ -71,56 +104,17 @@ h2 {
 .features-list {
   list-style-type: none;
   margin-top: 20px;
+  text-align: left;
+  display: inline-block;
 }
 
 .features-list li {
   margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .features-list li strong {
   color: #0f4c75;
-}
-
-/* Fan Experience Section */
-.fan-experience-section {
-  background-color: #fff;
-  padding: 40px 0;
-}
-
-.fan-experience-section .section-text {
-  margin-bottom: 30px;
-  font-size: 1.2rem;
-}
-
-/* Seating Options Section */
-.seating-section {
-  background-color: #f9f9f9;
-  padding: 40px 0;
-}
-
-.seating-options {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.seating-option {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  width: 30%;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.seating-option h3 {
-  color: #0f4c75;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.seating-option p {
-  font-size: 1rem;
 }
 
 /* Sustainability Section */
@@ -132,32 +126,16 @@ h2 {
 .sustainability-list {
   list-style-type: none;
   margin-top: 20px;
+  text-align: left;
+  display: inline-block;
 }
 
 .sustainability-list li {
   margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .sustainability-list li strong {
-  color: #0f4c75;
-}
-
-/* Technology Section */
-.technology-section {
-  background-color: #f9f9f9;
-  padding: 40px 0;
-}
-
-.technology-list {
-  list-style-type: none;
-  margin-top: 20px;
-}
-
-.technology-list li {
-  margin-bottom: 10px;
-}
-
-.technology-list li strong {
   color: #0f4c75;
 }
 
@@ -169,7 +147,7 @@ h2 {
 
 .gallery-images {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -188,7 +166,7 @@ h2 {
 
 /* Call to Action Section */
 .cta-section {
-  background-color: powderblue;
+  background-color: #A7C7E7; /* Powder Blue */
   padding: 40px 0;
   text-align: center;
 }
@@ -200,7 +178,7 @@ h2 {
 }
 
 .cta-btn {
-  background-color: sunshinegold;
+  background-color: #FFCC00; /* Sunshine Gold */
   color: #fff;
   padding: 15px 30px;
   font-size: 1.1rem;
@@ -209,7 +187,7 @@ h2 {
 }
 
 .cta-btn:hover {
-  background-color: #ffbe00;
+  background-color: #e6b800;
 }
 
 /* Footer Section */
