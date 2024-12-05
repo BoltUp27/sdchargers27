@@ -10,10 +10,10 @@ body {
   font-family: 'Bebas Neue', sans-serif;
   background-color: #f4f4f4;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.8;
+  text-align: center; /* Ensures everything is centered by default */
   padding: 0;
   margin: 0;
-  text-align: center; /* Ensures everything is centered by default */
 }
 
 /* Header Styling */
@@ -32,7 +32,8 @@ header .logo-img {
 .hero {
   background: url('your-image-url.jpg') center/cover no-repeat; /* Replace with your image */
   color: #fff;
-  padding: 100px 0;
+  padding: 120px 0;
+  text-align: center; /* Keeps text centered */
 }
 
 .hero-title {
@@ -44,16 +45,18 @@ header .logo-img {
 }
 
 .hero-description {
-  font-size: 1.25rem;
-  color: #FFB84D;  /* Darker Sunshine Gold */
-  margin-bottom: 20px;
-  text-align: center; /* Keeps text centered */
+  font-size: 1.5rem;
+  color: #FFB84D;  /* Darker Sunshine Gold for body text */
+  margin-bottom: 30px;
+  max-width: 80%; /* Allows the text to expand and fit the width */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Stadium Info Section */
 .info-section {
   background-color: #fff;
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
 .container {
@@ -71,22 +74,18 @@ h2 {
 
 /* Paragraph and Text Styling */
 .section-text {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: center; /* Center text for all sections */
 }
 
-/* Overview Section Styling */
-.overview-section {
-  background-color: #fff;
-  padding: 40px 0;
-  text-align: center;
-}
-
+/* Stadium Image Styling */
 .stadium-img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 600px;
   height: auto;
-  margin-top: 20px;
+  margin: 30px auto;
+  display: block; /* Centers the image */
 }
 
 /* Call to Action Section */
