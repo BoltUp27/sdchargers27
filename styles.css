@@ -1,213 +1,221 @@
-/* Global Styles */
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body and Overall Page Styling */
 body {
-  font-family: 'Arial', sans-serif; /* Default font for body text */
-  line-height: 1.6;
-  color: #333;
-  background-color: #f7f7f7;
-  text-align: center; /* Center all body text */
-}
-
-/* Top Header Section - where the logo is */
-header {
-  background-color: #39a2db; /* Powder Blue for the top bar */
-  padding: 20px 0; /* Adjust padding */
-  color: white;
-}
-
-.logo-img {
-  max-width: 200px;
-  margin: 0 auto;
-  display: block;
-}
-
-/* Hero Section Styles */
-.hero {
-  background: linear-gradient(to right, #39a2db, #f5a623);
-  color: #fff;
-  padding: 100px 20px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-title {
-  font-family: 'Bebas Neue', sans-serif; /* Apply Bebas Neue to the hero title */
-  font-size: 4rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  background: linear-gradient(to right, #00b5e2, #fbb03b); /* SuperCharger Gradient */
-  -webkit-background-clip: text; /* Apply the gradient to the text */
-  color: transparent; /* Make the text transparent to show the gradient */
-}
-
-.hero-description {
-  font-size: 1.4rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.cta-btn {
-  background-color: #fbb03b; /* Sunshine Gold */
-  color: white;
-  padding: 12px 25px;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.cta-btn:hover {
-  background-color: #39a2db; /* Powder Blue */
-}
-
-/* Stadium Section Styles */
-.info-section {
-  padding: 60px 20px;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.section-text {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-}
-
-.stadium-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px; /* Adds space above the image */
-}
-
-/* Call to Action Section Styles */
-.cta-section {
-  background-color: #f0f9ff; /* Powder Blue */
-  padding: 50px 20px;
-}
-
-.cta-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.cta-text {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-.cta-btn {
-  background-color: #fbb03b; /* Sunshine Gold */
-  color: white;
-  padding: 12px 20px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.cta-btn:hover {
-  background-color: #39a2db; /* Powder Blue */
-}
-
-/* Contact Form Section Styles */
-.contact-section {
-  background-color: #f0f9ff; /* Powder Blue */
-  padding: 40px 20px;
-  color: #333;
-}
-
-.contact-section h2 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #fbb03b; /* Sunshine Gold */
-}
-
-.contact-section p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-.contact-form {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.form-group label {
-  display: block;
-  font-size: 1.1rem;
+  background-color: #f4f4f4;
   color: #333;
-  margin-bottom: 5px;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
 }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  border: 2px solid #dcdcdc;
-  border-radius: 4px;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #39a2db; /* Powder Blue */
-  outline: none;
-}
-
-.submit-btn {
-  background-color: #fbb03b; /* Sunshine Gold */
-  color: white;
-  padding: 12px 20px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.submit-btn:hover {
-  background-color: #39a2db; /* Powder Blue */
-}
-
-/* Footer Section Styles */
-footer {
-  background-color: #333;
-  color: white;
+/* Header Styling */
+header {
+  background-color: powderblue;
   padding: 20px 0;
   text-align: center;
 }
 
-footer p {
+header .logo-img {
+  width: 150px;
+  height: auto;
+}
+
+/* Main Section Styling */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+/* Heading for All Sections */
+h2 {
+  color: #0f4c75;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Paragraph and Text Styling */
+.section-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Overview Section Styling */
+.overview-section {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.stadium-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.features-list {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+}
+
+.features-list li strong {
+  color: #0f4c75;
+}
+
+/* Fan Experience Section */
+.fan-experience-section {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.fan-experience-section .section-text {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+/* Seating Options Section */
+.seating-section {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.seating-options {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.seating-option {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seating-option h3 {
+  color: #0f4c75;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.seating-option p {
   font-size: 1rem;
+}
+
+/* Sustainability Section */
+.sustainability-section {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.sustainability-list {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.sustainability-list li {
+  margin-bottom: 10px;
+}
+
+.sustainability-list li strong {
+  color: #0f4c75;
+}
+
+/* Technology Section */
+.technology-section {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.technology-list {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.technology-list li {
+  margin-bottom: 10px;
+}
+
+.technology-list li strong {
+  color: #0f4c75;
+}
+
+/* Gallery Section */
+.gallery-section {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  width: 32%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Call to Action Section */
+.cta-section {
+  background-color: powderblue;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.cta-section .cta-text {
   color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: sunshinegold;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  background-color: #ffbe00;
+}
+
+/* Footer Section */
+footer {
+  background-color: #0f4c75;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
