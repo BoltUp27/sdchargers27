@@ -32,7 +32,7 @@ header .logo-img {
   margin-bottom: 15px; /* Space between logo and title */
 }
 
-/* Hero Section */
+/* Hero Section (For Both Pages) */
 .hero {
   background-color: #fff;
   padding: 40px 0;
@@ -40,7 +40,9 @@ header .logo-img {
 
 .hero-title {
   font-size: 3rem;
-  color: #0f4c75;
+  background: linear-gradient(45deg, #A7C7E7, #FFCC00);  /* Powder Blue to Sunshine Gold gradient */
+  -webkit-background-clip: text;
+  color: transparent;  /* Makes the text transparent so the gradient shows */
   margin-bottom: 20px;
 }
 
@@ -49,119 +51,57 @@ header .logo-img {
   margin-bottom: 20px;
 }
 
-.cta-btn {
-  background-color: #FFCC00;  /* Sunshine Gold */
-  color: #fff;
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  border-radius: 5px;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.cta-btn:hover {
-  background-color: #e6b800;  /* Slightly darker gold on hover */
-}
-
-/* Stadium Overview Section */
-.overview-section {
+/* Move to San Diego Section (for index.html only) */
+.move-section {
   background-color: #fff;
   padding: 40px 0;
+  display: block;  /* Make sure it only appears in the right page */
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px 0;
-}
-
-h2 {
+.move-section h2 {
   color: #0f4c75;
   font-size: 2.5rem;
   margin-bottom: 20px;
-  text-align: center;
 }
 
-.section-text {
+.move-section .section-text {
   font-size: 1.1rem;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 30px;
 }
 
-.stadium-img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
+.move-details {
+  margin-bottom: 40px;
 }
 
-/* Features Section */
-.features-section {
-  background-color: #f9f9f9;
-  padding: 40px 0;
-}
-
-.features-list {
-  list-style-type: none;
-  margin-top: 20px;
-  text-align: left;
-  display: inline-block;
-}
-
-.features-list li {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-}
-
-.features-list li strong {
+.move-details h3 {
   color: #0f4c75;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
-/* Sustainability Section */
-.sustainability-section {
+.move-details p {
+  font-size: 1.1rem;
+  text-align: left; /* Align text to the left for readability */
+  line-height: 1.8;
+}
+
+/* Stadium Overview Section (for stadium.html only) */
+.overview-section {
   background-color: #fff;
   padding: 40px 0;
+  display: none;  /* Hide on index.html */
 }
 
-.sustainability-list {
-  list-style-type: none;
-  margin-top: 20px;
-  text-align: left;
-  display: inline-block;
-}
-
-.sustainability-list li {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-}
-
-.sustainability-list li strong {
+.overview-section h2 {
   color: #0f4c75;
-}
-
-/* Gallery Section */
-.gallery-section {
-  background-color: #fff;
-  padding: 40px 0;
-}
-
-.gallery-images {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.gallery-image {
-  width: 32%;
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.gallery-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+.overview-section p {
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 1.6;
 }
 
 /* Call to Action Section */
@@ -187,13 +127,84 @@ h2 {
 }
 
 .cta-btn:hover {
-  background-color: #e6b800;
+  background-color: #e6b800;  /* Slightly darker gold on hover */
 }
 
-/* Footer Section */
-footer {
-  background-color: #0f4c75;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
+/* Gallery Section */
+.gallery-section {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.gallery-section h2 {
+  color: #0f4c75;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Features List */
+.features-list {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.features-list li {
+  margin-bottom: 15px;
+}
+
+/* Sustainability Section */
+.sustainability-section {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.sustainability-section h2 {
+  color: #0f4c75;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.sustainability-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.sustainability-list li {
+  margin-bottom: 15px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .gallery-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-image {
+    width: 90%;
+    height: auto;
+  }
+
+  .cta-btn {
+    width: 80%;
+    font-size: 1rem;
+  }
 }
