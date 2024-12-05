@@ -13,11 +13,11 @@ body {
   text-align: center; /* Center all body text */
 }
 
-/* Header Section */
+/* Top Header Section - where the logo is */
 header {
-  padding: 20px 0;
-  background-color: #39a2db; /* Powder Blue */
-  color: white; /* Text color */
+  background-color: #39a2db; /* Powder Blue for the top bar */
+  padding: 20px 0; /* Adjust padding */
+  color: white;
 }
 
 .logo-img {
