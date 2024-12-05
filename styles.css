@@ -16,7 +16,7 @@ body {
 /* Header Section */
 header {
   padding: 20px 0;
-  background: linear-gradient(to right, #00b5e2, #fbb03b); /* SuperCharger Gradient */
+  background-color: #39a2db; /* Powder Blue */
   color: white; /* Text color */
 }
 
