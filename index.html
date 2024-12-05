@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chargers - Welcome Back to San Diego</title>
+    <title>The Chargers Are Back in San Diego</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,43 +14,54 @@
         <img src="chargers.png" alt="Chargers Logo" class="logo-img">
     </header>
 
-    <!-- Hero Section (Chargers are back in SD) -->
-    <section class="hero-section">
-        <div class="container">
-            <h1>The Chargers Are Back In San Diego!</h1>
-            <p>Get ready for an unforgettable experience at the new state-of-the-art stadium!</p>
-            <!-- Button to navigate to the stadium page -->
-            <a href="stadium.html" class="cta-btn">Learn About the New Stadium</a>
-        </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="hero-title">The Chargers Are Back in San Diego!</h1>
+        <p class="hero-description">
+            Get ready for the new era of Chargers football at our brand new home. Join us as we make history in sunny San Diego.
+        </p>
+        <!-- Updated Buy Tickets Button (Now Linked to Official Chargers Tickets Page) -->
+        <a href="https://www.chargers.com/tickets/" class="cta-btn">Buy Tickets</a>
     </section>
 
-    <!-- About Section (What fans can expect) -->
-    <section class="about-section">
+    <!-- Stadium Info Section -->
+    <section class="info-section">
         <div class="container">
-            <h2>What to Expect</h2>
-            <p>The new stadium is more than just a place to watch football — it's a hub for entertainment, excitement, and unforgettable experiences!</p>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features-section">
-        <div class="container">
-            <h2>Stadium Features</h2>
-            <ul class="features-list">
-                <li><strong>State-of-the-art technology</strong> - LED screens, advanced sound systems, and free Wi-Fi</li>
-                <li><strong>Premium seating</strong> - VIP suites, luxury boxes, and club-level seating</li>
-                <li><strong>Fan experiences</strong> - Interactive zones, fan events, and exclusive memorabilia</li>
-            </ul>
+            <h2>Our New Home</h2>
+            <p class="section-text">
+                The Chargers are excited to play in our brand-new stadium right here in San Diego. This state-of-the-art facility is built for the fans, with incredible views and a modern atmosphere.
+            </p>
+            <img src="newstadium.png" alt="Chargers Stadium" class="stadium-img">
         </div>
     </section>
 
     <!-- Call to Action Section -->
     <section class="cta-section">
         <div class="cta-content">
-            <h2>Excited About the New Stadium?</h2>
-            <!-- Button to navigate to the stadium page -->
-            <a href="stadium.html" class="cta-btn">Learn More About the Stadium</a>
+            <h2 class="cta-text">Join Us This Season!</h2>
+            <a href="https://www.chargers.com/tickets/" class="cta-btn">Get Your Tickets Now</a>
         </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us!</p>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
     </section>
 
     <!-- Footer Section -->
