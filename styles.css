@@ -1,169 +1,210 @@
 /* Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif; /* Default font for body text */
-    line-height: 1.6;
-    color: #333;
-    background-color: #f7f7f7;
-    text-align: center; /* Center all body text */
-  }
-  
-  /* Header Styles */
-  header {
-    background-color: #0073e6;
-    padding: 30px 0;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo-img {
-    width: 220px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* Hero Section Styles */
-  .hero {
-    background: linear-gradient(to right, #39a2db, #f5a623);
-    color: #fff;
-    padding: 100px 20px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .hero-title {
-    font-family: 'Bebas Neue', sans-serif; /* Apply Bebas Neue to the title only */
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    background: linear-gradient(to right, #00b5e2, #fbb03b); /* SuperCharger Gradient */
-    -webkit-background-clip: text; /* Apply the gradient to the text */
-    color: transparent; /* Make the text transparent to show the gradient */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Optional: Adds depth to the text */
-  }
-  
-  .hero-description {
-    font-size: 1.4rem;
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .cta-btn {
-    background-color: #f5a623;
-    color: #fff;
-    padding: 16px 32px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .cta-btn:hover {
-    background-color: #d88c21;
-  }
-  
-  /* Section Styles */
-  .info-section {
-    padding: 60px 20px;
-    background-color: #fff;
-    text-align: center;
-    color: #333;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  h2 {
-    font-family: 'Bebas Neue', sans-serif; /* Apply Bebas Neue to section headers */
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center; /* Center section headers */
-  }
-  
-  .section-text {
-    font-size: 1.25rem;
-    line-height: 1.8;
-    color: #555;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; /* Center the paragraph text */
-  }
-  
-  .stadium-img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin-top: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin-left: auto;
-    margin-right: auto; /* Center the image */
-  }
-  
-  /* Call to Action Section Styles */
-  .cta-section {
-    background-color: #0073e6;
-    padding: 60px 20px;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .cta-content h2 {
-    font-family: 'Bebas Neue', sans-serif; /* Apply Bebas Neue to CTA section header */
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-  }
-  
-  .cta-text {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; /* Center the CTA text */
-  }
-  
-  .cta-btn {
-    background-color: #f5a623;
-    padding: 18px 40px;
-    font-size: 1.3rem;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    display: inline-block; /* Keep it inline so it centers properly */
-    margin-top: 20px;
-  }
-  
-  .cta-btn:hover {
-    background-color: #d88c21;
-  }
-  
-  /* Footer Styles */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  footer p {
-    font-size: 1rem;
-    margin: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Default font for body text */
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f7f7;
+  text-align: center; /* Center all body text */
+}
+
+/* Header Section */
+header {
+  padding: 20px 0;
+}
+
+.logo-img {
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Hero Section Styles */
+.hero {
+  background: linear-gradient(to right, #39a2db, #f5a623);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif; /* Apply Bebas Neue to the hero title */
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #00b5e2, #fbb03b); /* SuperCharger Gradient */
+  -webkit-background-clip: text; /* Apply the gradient to the text */
+  color: transparent; /* Make the text transparent to show the gradient */
+}
+
+.hero-description {
+  font-size: 1.4rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-btn {
+  background-color: #fbb03b; /* Sunshine Gold */
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.cta-btn:hover {
+  background-color: #39a2db; /* Powder Blue */
+}
+
+/* Stadium Section Styles */
+.info-section {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.stadium-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Call to Action Section Styles */
+.cta-section {
+  background-color: #f0f9ff; /* Powder Blue */
+  padding: 50px 20px;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: #fbb03b; /* Sunshine Gold */
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background-color: #39a2db; /* Powder Blue */
+}
+
+/* Contact Form Section Styles */
+.contact-section {
+  background-color: #f0f9ff; /* Powder Blue */
+  padding: 40px 20px;
+  color: #333;
+}
+
+.contact-section h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fbb03b; /* Sunshine Gold */
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #dcdcdc;
+  border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #39a2db; /* Powder Blue */
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #fbb03b; /* Sunshine Gold */
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #39a2db; /* Powder Blue */
+}
+
+/* Footer Section Styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #fff;
+}
